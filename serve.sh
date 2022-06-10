@@ -1,7 +1,7 @@
 #!/bin/bash
 
-screen -dmS serve bundle exec jekyll serve --unpublished --future -w
+screen -dmS jekyll-serve bundle exec jekyll serve --unpublished --future -w --drafts
 
 echo "#### Starting screen session -- press ctrl-d to detach"
-screen -x serve
+screen -x jekyll-serve
 echo #### Screen exited.
